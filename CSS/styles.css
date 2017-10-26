@@ -159,21 +159,36 @@ now override the 3.3 new styles for modern browsers & apply opacity
 }
 /*END STORE SECTION*/
 
-/*START ITEM FULL VIEW STYLES*/
+/*START ITEM FULLVIEW STYLES*/
 
-.header_item_fullview {
+.item_fullview_header {
   max-width: 100vw;
-  height: 300px;
+  height: 200px;
+  background-image: url("../IMG/banner_skulls_3000.jpg");
   /*display: inline-flex;
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 2%;
   align-items: stretch;*/
-  background-color: red;
+  background-color: gainsboro;
 
 }
 
-.container_item_fullview {
+.item_fullview_navigation {
+  text-align: center;
+  padding-top: 160px;
+
+}
+
+.item_fullview_navigation a {
+  color: black;
+  font-size: 20pt;
+  background-color: white;
+
+}
+
+
+.item_fullview_container {
   /*width: 90%;*/
   height: 750px;
   /*display: inline-flex;*/
@@ -184,37 +199,43 @@ now override the 3.3 new styles for modern browsers & apply opacity
   justify-content: center;
 }
 
-.container_fullview_left {
+@media (max-width: 899px) {
+  .item_fullview_container {
+    height: 950px;
+    }
+  }
+
+.item_fullview_container_left {
   width: 625px;
-  background-color: silver;
+  /*background-color: silver;*/
 }
 
-.fullview_item_image {
+.item_fullview_image {
   width: 500px;
   height: 600px;
   background-color: black;
   margin: 0 auto;
   margin-top: 20px;
-  margin-bottom: 20px;
+  /*margin-bottom: 20px;*/
 }
 
 @media (max-width: 555px) {
-  .fullview_item_image {
+  .item_fullview_image {
     width: 250px;
     height: 400px;
   }
 }
 
-.container_fullview_right {
+.item_fullview_container_right {
   width: 275px;
-  background-color: darkgray;
+  /*background-color: darkgray;*/
   /*padding: 20px 20px 0px 20px;*/
 }
 
 @media (max-width: 899px) {
-  .container_fullview_right {
-    width: 625px;
-    background-color: pink;
+  .item_fullview_container_right {
+    width: 500px;
+    /*background-color: pink;*/
   }
 }
 
@@ -224,7 +245,7 @@ margin: 20px;
 }
 @media (max-width: 899px) {
   .item_details {
-    margin: 40px;
+    /*margin: 10px;*/
   }
 
 }
@@ -233,17 +254,26 @@ margin: 20px;
 .button {
   width: 225px;
   height: 50px;
-  background-color: black;
+  /*background-color: slategray;*/
   margin: 0 auto;
+  margin-top: 40px;
+  border: 2px solid slategray;
 }
 @media (max-width: 899px) {
   .button {
-    width: 450px;
+    width: 70%;
     margin: 0 auto;
     display: block;
   }
 }
 
+
+.item_fullview_footer {
+  height: 50px;
+  width: 100vw;
+  border-top: 2px solid silver;
+  margin-top: 40px;
+}
 
 
 /*END ITEM FULL VIEW STYLES*/
