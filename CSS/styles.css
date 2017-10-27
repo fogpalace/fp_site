@@ -18,15 +18,37 @@ html,
     }
 
     .item:nth-child(1) {
-      background: blue;
+      background-image: url("../IMG/carousel_image_1.jpg") ;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: top;
     }
 
     .item:nth-child(2) {
-      background: red;
+      background-image: url("../IMG/carousel_image_2.jpg") ;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: top;
+    }
+
+    @media (max-width: 1900px) {
+      .item:nth-child(2) {
+        background-image: url("../IMG/carousel_image_5.jpg") ;
+        background-position: center;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .item:nth-child(2) {
+        background-image: url("../IMG/carousel_image_4.jpg") ;
+      }
     }
 
     .item:nth-child(3) {
-      background: orange;
+      background-image: url("../IMG/carousel_image_3.jpg") ;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
     }
 
 
@@ -96,9 +118,12 @@ now override the 3.3 new styles for modern browsers & apply opacity
 
 #item1 {
   /*background-color: red;*/
-  width: 285px;
+  width: 330px;
   height: 385px;
   margin: 5px 5px 5px 5px;
+  background-size:cover;
+  background-position: center;
+  background-color: pink;
 
 
 
@@ -132,28 +157,34 @@ now override the 3.3 new styles for modern browsers & apply opacity
 
 #item2 {
   background-color: black;
-  width: 285px;
+  width: 330px;
   height: 385px;
   margin: 5px 5px 5px 5px;
 }
 
 #item3 {
   background-color: red;
-  width: 285px;
+  width: 330px;
   height: 385px;
   margin: 5px 5px 5px 5px;
 }
 
 #item4 {
   background-color: black;
-  width: 285px;
+  width: 330px;
   height: 385px;
   margin: 5px 5px 5px 5px;
 }
 
 #item5 {
   background-color: red;
-  width: 285px;
+  width: 330px;
+  height: 385px;
+  margin: 5px 5px 5px 5px;
+}
+#item6 {
+  background-color: lawngreen;
+  width: 330px;
   height: 385px;
   margin: 5px 5px 5px 5px;
 }
