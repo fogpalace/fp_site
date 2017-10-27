@@ -165,12 +165,13 @@ now override the 3.3 new styles for modern browsers & apply opacity
   max-width: 100vw;
   height: 200px;
   background-image: url("../IMG/banner_skulls_3000.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   /*display: inline-flex;
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 2%;
   align-items: stretch;*/
-  background-color: gainsboro;
 
 }
 
@@ -211,9 +212,12 @@ now override the 3.3 new styles for modern browsers & apply opacity
 }
 
 .item_fullview_image {
-  width: 500px;
+  width: 575px;
   height: 600px;
   background-color: black;
+  background-image: url("../IMG/GoatHead_125.jpg");
+  background-size: 575px 600px;
+  background-position: center;
   margin: 0 auto;
   margin-top: 20px;
   /*margin-bottom: 20px;*/
@@ -250,6 +254,10 @@ margin: 20px;
 
 }
 
+ul {
+    /*list-style:none;*/
+    padding-left: 20px;
+}​
 
 .button {
   width: 225px;
